@@ -14,11 +14,9 @@ AsyncWebServer server(80);
 */
 
 //WiFi Credentials
- #define WIFI_SSID "ivy"
- #define WIFI_PASSWORD "12345ivy"
+ #define WIFI_SSID ""
+ #define WIFI_PASSWORD ""
 
-//#define WIFI_SSID "equipos_medicos"
-//#define WIFI_PASSWORD "Cl1n1c@2018."
 
 
 String idSensor = "6";
@@ -37,7 +35,7 @@ String timeStamp;
 
 //MQTT Config
 #include <AsyncMqttClient.h>
-#define MQTT_HOST IPAddress(186, 64, 123, 26)  // For a cloud MQTT broker, type the domain name  #define MQTT_HOST "example.com"
+#define MQTT_HOST IPAddress()  // For a cloud MQTT broker, type the domain name  #define MQTT_HOST "example.com"
 
 #define MQTT_PORT 1883
 AsyncMqttClient mqttClient;
